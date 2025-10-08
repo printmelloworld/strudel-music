@@ -1,0 +1,30 @@
+// "Weird beings in the neighbourhood"
+// @by print('Mello World!')
+
+setcpm(110/4)
+
+// They watch
+$crackle: sound("crackle").density("0.5").hpf(1700).gain(0.4)
+$noise: sound("pink").gain(0.1)
+
+
+// They walk
+$kalimba:
+n("<[0 0] 3 [5 5 5 5] 1 0 8 [2 2 2 2] 3>*2"
+//.add("<5 8 5 8>") // moving closer
+//.add("<0 5 0 -5 0 5>") // and closer
+)
+.scale("C4:minor")
+.sound("gm_kalimba")
+
+
+// They speak
+$piano:
+n("<0 5 2 3 [0,2] 3 [2,5] 1>*2")
+.scale("C4:minor")
+.sound("gm_piano")
+.att(0) // whispers at .5
+.coarse(4) // from 4 to 8 they speak louder 
+.delay(".6:.8:.6")
+.room(1.5)
+.gain(0.7)
