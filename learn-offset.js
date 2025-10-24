@@ -1,4 +1,4 @@
-// "Learn: Pattern offset"
+// "Learning: Pattern offset"
 // @by print('Mello World!')
 
 setcpm(140/4)
